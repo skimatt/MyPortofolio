@@ -10,7 +10,7 @@
   let showCursor = true;
   
   const phrases = [
-    'Seorang Profesional IT.',
+    'Seorang Mahasiswa IT.',
     'Antusias di bidang AI.',
     'Pengembang Perangkat Lunak Kreatif.'
   ];
@@ -76,10 +76,8 @@
 <svelte:window on:mousemove={handleMouseMove} />
 
 <section id="hero" class="relative min-h-screen overflow-hidden">
-  <!-- Animated Background Gradient -->
   <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100"></div>
   
-  <!-- Floating Particles Background -->
   <div class="absolute inset-0 overflow-hidden">
     {#each Array(15) as _, i}
       <div 
@@ -95,7 +93,6 @@
     {/each}
   </div>
 
-  <!-- Geometric Shapes -->
   <div class="absolute inset-0 pointer-events-none">
     <div 
       class="absolute top-20 left-10 w-32 h-32 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-full blur-xl animate-float"
@@ -111,31 +108,25 @@
     ></div>
   </div>
 
-  <!-- Main Content -->
   <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 lg:px-8 pt-20">
     {#if heroVisible}
-      <!-- Avatar with enhanced effects -->
       <div 
         in:scale={{ duration: 1000, easing: elasticOut, start: 0.3 }}
         class="mb-8 relative group"
         style="transform: translate({mouseX * 0.1}px, {mouseY * 0.1}px)"
       >
-        <!-- Glowing ring effect -->
         <div class="absolute -inset-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full opacity-30 blur-lg group-hover:opacity-50 transition-opacity duration-500 animate-pulse-slow"></div>
         
-        <!-- Avatar container -->
         <div class="relative">
           <img 
             src={avatar} 
             alt="Avatar Rahmat Mulia"
             class="w-44 h-44 lg:w-52 lg:h-52 rounded-full mx-auto shadow-2xl transform group-hover:scale-110 transition-all duration-700 border-4 border-white/50 backdrop-blur-sm"
           />
-          <!-- Avatar overlay effect -->
           <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-400/20 to-purple-400/20 group-hover:from-blue-400/30 group-hover:to-purple-400/30 transition-all duration-500"></div>
         </div>
       </div>
 
-      <!-- Name with proper staggered animation -->
       <div 
         in:fly={{ y: 80, duration: 1000, easing: backOut, delay: 400 }}
         class="text-center mb-6"
@@ -155,7 +146,6 @@
         </h1>
       </div>
 
-      <!-- Typing text with enhanced cursor -->
       <div 
         in:fade={{ delay: 1200, duration: 800 }}
         class="mb-12 h-16 flex items-center justify-center"
@@ -171,7 +161,6 @@
         </p>
       </div>
 
-      <!-- Enhanced Action Buttons -->
       <div 
         in:fade={{ delay: 1800, duration: 800 }}
         class="flex flex-col sm:flex-row justify-center gap-4 sm:gap-6 mb-16"
@@ -179,7 +168,6 @@
       >
         <a href="#projects"
            class="group relative bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 px-8 rounded-2xl font-semibold shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden">
-          <!-- Button shine effect -->
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
           <span class="relative z-10 flex items-center justify-center gap-2">
             Lihat Proyek
@@ -191,7 +179,6 @@
         
         <a href="#contact"
            class="group relative bg-white/80 backdrop-blur-sm border-2 border-blue-300 text-blue-700 py-4 px-8 rounded-2xl font-semibold hover:bg-blue-600 hover:text-white hover:border-blue-600 transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 shadow-lg hover:shadow-2xl overflow-hidden">
-          <!-- Button shine effect -->
           <div class="absolute inset-0 bg-gradient-to-r from-transparent via-blue-100/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
           <span class="relative z-10 flex items-center justify-center gap-2">
             Hubungi Saya
@@ -202,20 +189,7 @@
         </a>
       </div>
 
-      <!-- Simple Scroll Indicator -->
-      <div 
-        in:fade={{ delay: 2200, duration: 500 }}
-        class="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        style="transform: translate(calc(-50% + {mouseX * 0.02}px), {mouseY * 0.02}px)"
-      >
-        <a href="#about" class="flex flex-col items-center text-gray-600 hover:text-blue-600 transition-all duration-300 group">
-          <span class="text-sm font-medium mb-2 group-hover:scale-110 transition-transform duration-300">Jelajahi Lebih</span>
-          <svg class="w-6 h-6 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m-7-7 7 7m7-7H8" />
-          </svg>
-        </a>
-      </div>
-    {/if}
+      {/if}
   </div>
 </section>
 

@@ -66,7 +66,7 @@
       <div in:fly={{ y: 50, duration: 800, easing: quintOut }} class="text-center mb-16">
         <h2 class="text-5xl lg:text-6xl font-bold mb-4">
           <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
-            Projek
+            Project
           </span>
         </h2>
         <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
@@ -124,7 +124,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 group-hover:rotate-6 transition-transform duration-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
           </svg>
-          Lihat Semua Projek
+          Lihat Semua Projects
         </a>
       </div>
     {/if}
